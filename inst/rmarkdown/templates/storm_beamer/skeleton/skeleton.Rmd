@@ -53,7 +53,7 @@ with(diamonds, cor(carat, price))
 ## R Plot
 
 \scriptsize
-```{r plot_ex}
+```{r plot_ex, fig.width=4.5, fig.height=2.25, fig.align='center'}
 diamonds %>% 
   sample_n(100) %>% 
   ggplot(., mapping = aes(x = carat, y = price)) +
