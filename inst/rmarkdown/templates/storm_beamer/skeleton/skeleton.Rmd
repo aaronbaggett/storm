@@ -18,7 +18,7 @@ output:
     ]
     highlight: tango
     # keep_tex: yes
-monofont: SourceCodePro-Light
+# monofont: Lucida Console
 # mainfont: FlamaBook
 fontsize: 14pt
 classoption: aspectratio = 1610
@@ -26,6 +26,8 @@ classoption: aspectratio = 1610
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(ggplot2)
 ```
 
 # Section Slide
@@ -35,3 +37,13 @@ knitr::opts_chunk$set(echo = TRUE)
 - List
     - Subitem
     - Subitem
+
+# R Code
+
+## R Code
+
+\scriptsize
+```{r code_ex}
+head(diamonds)
+with(diamonds, cor(carat, price))
+```
