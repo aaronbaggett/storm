@@ -1,0 +1,4 @@
+name: Storm Lectiure Slides
+description: >
+ Custom beamer theme executable via RMarkdown
+create_dir: true

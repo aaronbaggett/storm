@@ -1,0 +1,37 @@
+---
+title: "Title"
+subtitle: "Subtitle"
+author: "Aaron R. Baggett, Ph.D."
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+institute: | 
+  | University of Mary Hardin-Baylor
+  | PSYC 0000: Title
+output: 
+  beamer_presentation:
+    includes:
+      in_header: resources/header.tex
+      before_body: resources/prefix.tex
+      after_body: resources/suffix.tex
+    template: resources/template.tex
+    pandoc_args: [
+      "--latex-engine=xelatex"
+    ]
+    highlight: tango
+    # keep_tex: yes
+monofont: SourceCodePro-Light
+# mainfont: FlamaBook
+fontsize: 14pt
+classoption: aspectratio = 1610
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Section Slide
+
+## Frame Title
+- List
+- List
+    - Subitem
+    - Subitem
