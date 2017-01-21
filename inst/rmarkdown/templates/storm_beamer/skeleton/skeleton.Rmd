@@ -47,3 +47,15 @@ library(ggplot2)
 head(diamonds)
 with(diamonds, cor(carat, price))
 ```
+
+# R Plot
+
+## R Plot
+
+\scriptsize
+```{r plot_ex}
+diamonds %>% 
+  sample_n(100) %>% 
+  ggplot(., mapping = aes(x = carat, y = price)) +
+    geom_point()
+```
