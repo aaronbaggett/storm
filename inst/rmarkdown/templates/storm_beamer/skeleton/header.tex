@@ -14,7 +14,8 @@ wasysym,
 hyperref,
 hanging,
 multirow,
-eso-pic
+eso-pic,
+comment
 }
 
 %\graphicspath{{../figs/}}
@@ -104,6 +105,8 @@ eso-pic
 \setbeamercolor{itemize subitem}{fg=sthlmDarkBlue}
 \setbeamercolor{itemize subsubitem}{fg=sthlmDarkBlue}
 
+\renewcommand\UrlFont{\texttt}
+
 % ------------------------------------------------------------------------------------------------
 %	FONTS
 % ------------------------------------------------------------------------------------------------
@@ -111,48 +114,46 @@ eso-pic
 % General
 
 % Declare fontfamilys
-\if@doNoFlama%
-	% Sans serif math option
-	\if@doSans%
-	% Sans serif math
-		\usepackage{fontspec}%
-		\setmainfont{Helvetica Neue Light}%
-	\else%
-		% Serif math
-		\usefonttheme{professionalfonts}%
-		\usepackage[no-math]{fontspec}%
-	\fi%
-	
-	\newfontfamily\Light{Helvetica Neue UltraLight}%
-	\newfontfamily\Book{Helvetica Neue Bold}%
-	\newfontfamily\bfseries{Helvetica Neue Medium}%
-	\setsansfont{Helvetica Neue Light}%
-\else%
-	% Sans serif math option
-	\if@doSans%
-	% Sans serif math
-		\usepackage{fontspec}%
-		\setmainfont{FlamaLight}%
-	\else%
-		% Serif math
-		\usefonttheme{professionalfonts}%
-		\usepackage[no-math]{fontspec}%
-	\fi%
-	
-	\newfontfamily\Light{FlamaLight}%
-	\newfontfamily\Book{FlamaBook}%
-	\newfontfamily\bfseries{FlamaMedium}%
-	\setsansfont{FlamaLight}%
+%\if@doNoFlama%
+%	% Sans serif math option
+%	\if@doSans%
+%	% Sans serif math
+%		\usepackage{fontspec}%
+%		\setmainfont{Helvetica Neue Light}%
+%	\else%
+%		% Serif math
+%		\usefonttheme{professionalfonts}%
+%		\usepackage[no-math]{fontspec}%
+%	\fi%
+%	
+%	\newfontfamily\Light{Helvetica Neue UltraLight}%
+%	\newfontfamily\Book{Helvetica Neue Bold}%
+%	\newfontfamily\bfseries{Helvetica Neue Medium}%
+%	\setsansfont{Helvetica Neue Light}%
+%\else%
+%	% Sans serif math option
+%	\if@doSans%
+%	% Sans serif math
+%		\usepackage{fontspec}%
+%		\setmainfont{FlamaLight}%
+%	\else%
+%		% Serif math
+%		\usefonttheme{professionalfonts}%
+%		\usepackage[no-math]{fontspec}%
+%	\fi%
+%	
+%	\newfontfamily\Light{FlamaLight}%
+%	\newfontfamily\Book{FlamaBook}%
+%	\newfontfamily\bfseries{FlamaMedium}%
+%	\setsansfont{FlamaLight}%
 	%\newfontfamily\texttt{SourceCodePro-Light}
-\fi%
-
-\renewcommand\UrlFont{\texttt}
+%\fi%
 
 % Font sizes
 
 % Titlepage
 \setbeamerfont{title}{family=\bfseries,size=\fontsize{24}{26}}
-\setbeamerfont{subtitle}{family=\Light,size=\fontsize{14}{18}}
+%\setbeamerfont{subtitle}{family=\Light,size=\fontsize{14}{18}}
 \setbeamerfont{date}{size=\fontsize{10}{14}}
 \setbeamerfont{author}{family=\bfseries,size=\fontsize{13}{15}}
 \setbeamerfont{institute}{size=\fontsize{09}{10}}
@@ -160,13 +161,13 @@ eso-pic
 % Section
 \setbeamerfont{section title}{size*={39pt}{24pt}, family = \bfseries, series=\bfseries}% Content
 \setbeamerfont{frametitle}{family=\bfseries,size=\large}
-\setbeamerfont{copyright text}{family=\Light,size=\tiny}
-\setbeamerfont{block title}{family=\Book,size=\large}
-\setbeamerfont{block title alerted}{family=\Book,size=\large}
+%\setbeamerfont{copyright text}{family=\Light,size=\tiny}
+%\setbeamerfont{block title}{family=\Book,size=\large}
+%\setbeamerfont{block title alerted}{family=\Book,size=\large}
 \setbeamerfont{alerted text}{family=\bfseries}
 
 % Captions
-\setbeamerfont{caption name}{family=\Book}
+%\setbeamerfont{caption name}{family=\Book}
 
 % ------------------------------------------------------------------------------------------------
 %	TITLE PAGE
