@@ -9,10 +9,10 @@ institute: |
 output: 
   beamer_presentation:
     includes:
-      in_header: resources/header.tex
-      before_body: resources/prefix.tex
-      after_body: resources/suffix.tex
-    template: resources/template.tex
+      in_header: header.tex
+      before_body: prefix.tex
+      after_body: suffix.tex
+    template: template.tex
     pandoc_args: [
       "--latex-engine=xelatex"
     ]
