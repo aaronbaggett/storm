@@ -1,4 +1,4 @@
 name: Storm Lecture Slides
 description: >
  Custom beamer theme executable via RMarkdown
-create_dir: false
+create_dir: true
