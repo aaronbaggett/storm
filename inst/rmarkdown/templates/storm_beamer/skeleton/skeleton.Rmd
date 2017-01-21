@@ -6,7 +6,7 @@ date: '`r format(Sys.Date(), "%B %d, %Y")`'
 institute: | 
   | University of Mary Hardin-Baylor
   | PSYC 0000: Title
-output: 
+output:
   beamer_presentation:
     includes:
       in_header: header.tex
@@ -18,8 +18,8 @@ output:
     ]
     highlight: tango
     # keep_tex: yes
-# monofont: Lucida Console
-# mainfont: FlamaBook
+monofont: Lucida Console # Comment out for default
+mainfont: Roboto # Comment out for default
 fontsize: 14pt
 classoption: aspectratio = 1610
 ---

@@ -114,60 +114,70 @@ comment
 % General
 
 % Declare fontfamilys
-%\if@doNoFlama%
-%	% Sans serif math option
-%	\if@doSans%
-%	% Sans serif math
-%		\usepackage{fontspec}%
-%		\setmainfont{Helvetica Neue Light}%
-%	\else%
-%		% Serif math
-%		\usefonttheme{professionalfonts}%
-%		\usepackage[no-math]{fontspec}%
-%	\fi%
-%	
-%	\newfontfamily\Light{Helvetica Neue UltraLight}%
-%	\newfontfamily\Book{Helvetica Neue Bold}%
-%	\newfontfamily\bfseries{Helvetica Neue Medium}%
-%	\setsansfont{Helvetica Neue Light}%
-%\else%
-%	% Sans serif math option
-%	\if@doSans%
-%	% Sans serif math
-%		\usepackage{fontspec}%
-%		\setmainfont{FlamaLight}%
-%	\else%
-%		% Serif math
-%		\usefonttheme{professionalfonts}%
-%		\usepackage[no-math]{fontspec}%
-%	\fi%
-%	
-%	\newfontfamily\Light{FlamaLight}%
-%	\newfontfamily\Book{FlamaBook}%
-%	\newfontfamily\bfseries{FlamaMedium}%
-%	\setsansfont{FlamaLight}%
+\if@doNoFlama%
+	% Sans serif math option
+	\if@doSans%
+	% Sans serif math
+		\usepackage{fontspec}%
+		\setmainfont{Helvetica Neue Light}%
+	\else%
+		% Serif math
+		\usefonttheme{professionalfonts}%
+		\usepackage[no-math]{fontspec}%
+	\fi%
+	
+	\newfontfamily\Light{Helvetica Neue UltraLight}%
+	\newfontfamily\Book{Helvetica Neue Bold}%
+	\newfontfamily\bfseries{Helvetica Neue Medium}%
+	\setsansfont{Helvetica Neue Light}%
+\else%
+	% Sans serif math option
+	\if@doSans%
+	% Sans serif math
+		\usepackage{fontspec}%
+		\setmainfont{Roboto Light}%
+	\else%
+		% Serif math
+		\usefonttheme{professionalfonts}%
+		\usepackage[no-math]{fontspec}%
+	\fi%
+	
+	\newfontfamily\Light{Roboto Light}
+	%\newfontfamily\Medium{Roboto Medium}
+	%\newfontfamily\Regular{Roboto Regular}
+	%\newfontfamily\Italic{Roboto Italic}
+	%\newfontfamily\LightItalic{Roboto Light Italic}
+	%\newfontfamily\MediumItalic{Roboto Medium Italic}
+	\newfontfamily\Black{Roboto Black}
+	%\newfontfamily\Bold{Roboto Bold}
+	%\newfontfamily\BlackItalic{Roboto Black Italic}
+	%\newfontfamily\BoldItalic{Roboto Bold Italic}
+	%\newfontfamily\Thin{Roboto Thin}
+	%\newfontfamily\ThinItalic{Roboto Thin Italic}
+	%\newfontfamily\bfseries{Roboto Bold}%
+	%\setsansfont{FlamaLight}%
 	%\newfontfamily\texttt{SourceCodePro-Light}
-%\fi%
+\fi%
 
-\setmainfont{Roboto Light}
-\newfontfamly\Light{Roboto Light}
-\newfontfamly\Medium{Roboto Medium}
-\newfontfamly\Regular{Roboto Regular}
-\newfontfamly\Italic{Roboto Italic}
-\newfontfamly\LightItalic{Roboto Light Italic}
-\newfontfamly\MediumItalic{Roboto Medium Italic}
-\newfontfamly\Black{Roboto Black}
-\newfontfamly\Bold{Roboto Bold}
-\newfontfamly\BlackItalic{Roboto Black Italic}
-\newfontfamly\BoldItalic{Roboto Bold Italic}
-\newfontfamly\Thin{Roboto Thin}
-\newfontfamly\ThinItalic{Roboto Thin Italic}
+%\setmainfont{Roboto Light}
+%\newfontfamily\Light{Roboto Light}
+%\newfontfamily\Medium{Roboto Medium}
+%\newfontfamily\Regular{Roboto Regular}
+%\newfontfamily\Italic{Roboto Italic}
+%\newfontfamily\LightItalic{Roboto Light Italic}
+%\newfontfamily\MediumItalic{Roboto Medium Italic}
+%\newfontfamily\Black{Roboto Black}
+%\newfontfamily\Bold{Roboto Bold}
+%\newfontfamily\BlackItalic{Roboto Black Italic}
+%\newfontfamily\BoldItalic{Roboto Bold Italic}
+%\newfontfamily\Thin{Roboto Thin}
+%\newfontfamily\ThinItalic{Roboto Thin Italic}
 
 % Font sizes
 
 % Titlepage
 \setbeamerfont{title}{family=\bfseries,size=\fontsize{24}{26}}
-%\setbeamerfont{subtitle}{family=\Light,size=\fontsize{14}{18}}
+\setbeamerfont{subtitle}{family=\Light,size=\fontsize{14}{18}}
 \setbeamerfont{date}{size=\fontsize{10}{14}}
 \setbeamerfont{author}{family=\bfseries,size=\fontsize{13}{15}}
 \setbeamerfont{institute}{size=\fontsize{09}{10}}
