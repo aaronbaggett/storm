@@ -4,6 +4,7 @@
 \usepackage{
 booktabs,
 fontspec,
+fontenc,
 graphicx,
 multicol,
 pgfplots,
@@ -142,18 +143,18 @@ comment
 		\usepackage[no-math]{fontspec}%
 	\fi%
 	
-	\newfontfamily\Light{Roboto Light}
+	%\newfontfamily\Light{Roboto Light}
 	%\newfontfamily\Medium{Roboto Medium}
 	%\newfontfamily\Regular{Roboto Regular}
 	%\newfontfamily\Italic{Roboto Italic}
 	%\newfontfamily\LightItalic{Roboto Light Italic}
 	%\newfontfamily\MediumItalic{Roboto Medium Italic}
-	\newfontfamily\Black{Roboto Black}
+	%\newfontfamily\Black{Roboto Black}
 	%\newfontfamily\Bold{Roboto Bold}
 	%\newfontfamily\BlackItalic{Roboto Black Italic}
 	%\newfontfamily\BoldItalic{Roboto Bold Italic}
 	%\newfontfamily\Thin{Roboto Thin}
-	%\newfontfamily\ThinItalic{Roboto Thin Italic}
+	\newfontfamily\ThinItalic{Roboto Thin Italic}
 	%\newfontfamily\bfseries{Roboto Bold}%
 	%\setsansfont{FlamaLight}%
 	%\newfontfamily\texttt{SourceCodePro-Light}
@@ -177,7 +178,9 @@ comment
 
 % Titlepage
 \setbeamerfont{title}{family=\bfseries,size=\fontsize{24}{26}}
-\setbeamerfont{subtitle}{family=\Light,size=\fontsize{14}{18}}
+\setbeamerfont{subtitle}{family=\ThinItalic,size=\fontsize{14}{18}}
+%\setbeamerfont{subtitle}{family=\fontfamily{Thin Italic}\selectfont}
+%\setbeamerfont{subtitle}{\fontfamily{Thin Italic}},size=\fontsize{14}{18}}
 \setbeamerfont{date}{size=\fontsize{10}{14}}
 \setbeamerfont{author}{family=\bfseries,size=\fontsize{13}{15}}
 \setbeamerfont{institute}{size=\fontsize{09}{10}}
